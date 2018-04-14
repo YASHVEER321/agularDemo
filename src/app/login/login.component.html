@@ -1,0 +1,29 @@
+<div style="width:100%;text-align:center">
+
+  <div class="container" style="width:20%;background-color:lightgrey;height:382px">
+    <h1>Login Form</h1>
+    <form [formGroup]="myform">
+      <!-- <form novalidate> -->
+        <div class="form-group">
+          <label for="name">Email</label>
+          <input type="text" class="form-control" id="email" style="text-align:center" placeholder="email" required formControlName="email">
+        </div>
+        <div class="form-group">
+          <label for="alterEgo">Password</label>
+          <input type="text" class="form-control" style="text-align:center" id="alterEgo" placeholder="password" formControlName="password">
+        </div>
+        <p-growl [(value)]="msgs"></p-growl>
+        <!-- <p-growl [(value)]="Error"></p-growl> -->
+        <br>
+        <button type="submit" class="btn btn-success" (click)="onLogin(myform.value)" style="width:70%">Login</button>
+
+      </form><br>
+  <div style="width:20%;background-color:lightgrey;height:2px;display:contents">
+      <button type="submit" class="btn btn-success" (click)="onRegistration()" style="background-color:cornflowerblue;width:70%">Sign Up</button>
+      
+     
+    </div>
+      
+  </div>
+</div>
+<!-- <pre>{{myform.value | json}}</pre>  -->

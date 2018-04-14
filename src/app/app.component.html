@@ -1,0 +1,73 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="ui-grid">
+  <div class="ui-grid-col-2 nav" style=""  routerLink="home">
+      Home
+    <!-- <a routerLink="home" style="text-decoration: none;">News</a> -->
+  </div>
+
+
+  <div class="ui-grid-col-2 nav" style="" routerLink="home">
+      Contact
+    <!-- <a routerLink="home" style="text-decoration: none;">Contact</a> -->
+  </div>
+
+
+  <!-- <div class="ui-grid-col-2 nav" style="">
+
+    <a routerLink="home" style="text-decoration: none;">Gallary</a>
+  </div> -->
+
+  <div class="ui-grid-col-2 nav" style="" routerLink="aboutus"> 
+      About Us
+    <!-- <a routerLink="aboutus" style="text-decoration: none;">About Us</a> -->
+  </div>
+  <div class="ui-grid-col-2 nav" style="" routerLink="login">
+      SignIn/SignUp
+    <!-- <a routerLink="login" style="text-decoration: none;">SignIn/SignUp</a> -->
+  </div>
+
+
+  <div class=" ui-grid-col-4 nav1" style="">
+    <form action="/action_page.php">
+      <input type="text" class="search" placeholder="Search.." name="search">
+      <button type="submit" class="submit" routerLink="aboutus" >Submit</button>
+    </form>
+  </div>
+
+</div>
+
+
+
+<div style="padding-top:50px;text-align: center">
+  <router-outlet></router-outlet>
+</div>
+<style>
+  .nav {
+    background-color: gray;
+    height: 67px;
+    font-size: 41px;
+    text-align: center;
+  }
+  .nav1 {
+    background-color: gray;
+    height: 67px;
+    font-size: 41px;
+    text-align: center;
+  }
+  .nav:hover{
+    background-color: goldenrod
+  }
+
+  .search{
+    width: 335px;
+    height: 50px;
+  }
+  .submit{
+    font-size: 34px;
+    width: 147px;
+    height: 51px;
+  }
+</style>
+
+
+<!-- </div> -->
